@@ -1,0 +1,82 @@
+<!--
+What: Publishes the privacy policy for PlayLanguage and its Premium subscription.
+Why: Players and Google Play need a public explanation of collected data, processors, retention, security, and deletion choices.
+Purpose: Give users a readable, non-geofenced privacy reference linked from the app and Play Console.
+Who: PlayLanguage users, RF Games, Google Play reviewers, and service providers supporting the app.
+How: Describes app/backend data flows and links users to account deletion and subscription management controls.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the PlayLanguage mobile app.">
+  <title>PlayLanguage Privacy Policy</title>
+  <style>
+    :root { color-scheme: light; --ink: #20202b; --muted: #555766; --accent: #4f5cff; --surface: #f3f5ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: var(--ink); line-height: 1.65; background: #fff; }
+    main { width: min(760px, 100%); margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: clamp(1.8rem, 6vw, 2.5rem); line-height: 1.2; }
+    h2 { margin-top: 2rem; font-size: 1.35rem; }
+    a { color: #3140df; }
+    a:focus-visible { outline: 3px solid #00a8b3; outline-offset: 3px; }
+    .summary { padding: 18px; border-radius: 12px; background: var(--surface); }
+    .meta, footer { color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 16px; margin: 24px 0; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>PlayLanguage Privacy Policy</h1>
+  <p class="meta">Last updated: July 17, 2026</p>
+
+  <p class="summary">PlayLanguage (called “PlayLingo” in some legacy service components) is an English-learning app developed by RF Games. This policy explains what data the app handles, why it is used, and the choices available to you.</p>
+
+  <nav aria-label="Policy links">
+    <a href="subscription-terms.html">Subscription terms</a>
+    <a href="delete-account.html">Delete an account</a>
+    <a href="https://play.google.com/store/account/subscriptions">Manage subscriptions</a>
+  </nav>
+
+  <h2>Data we collect</h2>
+  <ul>
+    <li><strong>Profile and identity:</strong> name, registered email address, language preference, country, avatar, optional birth date and English level if provided, and a Google Play Games player identifier when available for account linking.</li>
+    <li><strong>Learning activity:</strong> lesson and game progress, challenge scores, rankings, goals, completion results, and rewards.</li>
+    <li><strong>App activity and diagnostics:</strong> screens and actions used, app version, platform, session identifier, client timestamps, and delivery/operational logs. We use these to understand reliability and improve the experience.</li>
+    <li><strong>Subscription verification:</strong> Google Play product and purchase status, expiry dates, an obfuscated account identifier, and a cryptographic hash of the purchase token. The raw token is sent securely for verification but is not stored in the entitlement database or analytics.</li>
+    <li><strong>Device-derived country fallback:</strong> the device region may fill a missing ranking country. A country you explicitly select takes priority.</li>
+  </ul>
+
+  <h2>How we use data</h2>
+  <p>We use this information to create and maintain your profile, save progress, provide rankings and goals, deliver and improve lessons, diagnose failures, prevent duplicate subscription claims, verify Premium access, suppress ads for eligible users, and provide bounded offline access.</p>
+
+  <h2>Services and sharing</h2>
+  <p>We do not sell your personal data. Data is processed only as needed to operate the app by services such as Google Play Games, Google Play Billing, Google Mobile Ads, Google Cloud Translation, Amazon Web Services, and the configured database hosting provider. Free users may receive ads; Premium and legacy ad-removal users do not request ads after entitlement resolution. Google processes payments and payment methods under its own privacy terms; PlayLanguage does not receive your full card or bank details.</p>
+
+  <h2>Offline data</h2>
+  <p>The app stores preferences, progress, downloaded or generated translation cache entries, and a time-limited Premium entitlement snapshot on your device. A verified Premium snapshot permits offline learning for no more than seven days and may expire sooner with the paid subscription. Rankings, goals, new real-time translations, purchases, and subscription management still require internet access.</p>
+
+  <h2>Security</h2>
+  <p>Production traffic uses HTTPS. Google Play service credentials remain on the server, purchase tokens are not written to analytics or normal application logs, and stored entitlement records use token hashes and obfuscated account identifiers. No system can guarantee absolute security, but access is limited to operational needs.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Profile, progress, ranking, goal, and entitlement records are retained while needed to provide the account and operate the service. A verified deletion request is processed within 30 days. Limited billing, fraud-prevention, security, backup, or legal records may be retained longer where required, then deleted or anonymized when no longer needed. Uninstalling the app removes ordinary local app data but does not itself cancel a Google Play subscription.</p>
+  <p><a href="delete-account.html">Request account deletion</a>. To stop future subscription renewals, also use <a href="https://play.google.com/store/account/subscriptions">Google Play subscriptions</a>.</p>
+
+  <h2>Age and parental requests</h2>
+  <p>Where local law requires parental permission to use the app or create an account, a parent or guardian should provide that permission. A parent or guardian who believes a child provided personal data without required permission may contact us to request deletion.</p>
+
+  <h2>Your choices</h2>
+  <p>Completing the profile registration form is required to use the app. You control the profile values you provide and may manage or cancel Premium in Google Play, clear local app data through Android settings, or request deletion of the server-side account.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy when the app, providers, or legal requirements change. The date above identifies the current version.</p>
+
+  <h2>Contact</h2>
+  <p>RF Games / PlayLanguage<br><a href="mailto:play.language.info@gmail.com">play.language.info@gmail.com</a></p>
+
+  <footer><p>Package identifier: <code>com.rfgames.PlayLinguageVocabulary</code></p></footer>
+</main>
+</body>
+</html>
